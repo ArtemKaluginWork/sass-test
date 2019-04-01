@@ -1,17 +1,13 @@
 <template>
   <div id="app">
-    <calculator></calculator>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Calculator from '@/components/Calculator.vue';
 
 export default {
   name: 'app',
-  components: {
-    Calculator,
-  },
 };
 </script>
 

@@ -1,7 +1,6 @@
 <template>
   <div class="map">
-    <img class="plane" src="../assets/airplane-flight.svg"/>
-
+    <img class="plane play" src="../assets/airplane-flight.svg"/>
   </div>
 </template>
 
@@ -25,7 +24,22 @@ export default {
       height: 50px;
       width: 50px;
       transform: rotate(0deg);
+      transition: all 1s;
+    }
+    .play {
+      animation: play 3s infinite;
+
     }
   }
-
+  @keyframes play  {
+    to {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+  }
 </style>

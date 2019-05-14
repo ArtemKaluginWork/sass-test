@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "chance": "^1.0.18",
+    "html2canvas": "^1.0.0-rc.1",
     "vue": "^2.6.6",
     "vue-router": "^3.0.2"
   },
